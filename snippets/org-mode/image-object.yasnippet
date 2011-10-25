@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: Formal Example Expander
+# key: mkfig
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
+# --
+#+begin_docbook
+<figure>
+  <title>$1</title>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="$2"${3: id="$4"}/>
+    </imageobject>
+  </mediaobject>
+</figure>
+#+end_docbook
+
+$0
+

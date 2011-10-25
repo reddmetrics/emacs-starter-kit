@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: Informal Example Expander
+# key: infrml
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
+# --
+#+begin_docbook
+<informalexample>
+  <programlisting>
+    <codelink file="$1"${2: linkend="$3"}/>
+  </programlisting>
+</informalexample>
+#+end_docbook
+
+$0

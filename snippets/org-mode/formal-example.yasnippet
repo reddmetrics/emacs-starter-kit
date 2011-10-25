@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: Formal Example Expander
+# key: frml
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
+# --
+#+begin_docbook
+<example>
+  <title>$1</title>
+  <programlisting>
+    <codelink file="$2"${3: linkend="$4"}/>
+  </programlisting>
+</example>
+#+end_docbook
+
+$0
