@@ -79,6 +79,7 @@
   '(define-key slime-repl-mode-map (kbd "C-c p")
      'slime-pprint-eval-last-expression))
 
+(setenv "CLOJURESCRIPT_HOME" "/Users/sritchie/code/clojure/clojurescript")
 (setq inferior-lisp-program "browser-repl")
 
 (provide 'starter-kit-lisp)
