@@ -6,11 +6,18 @@
       eshell-save-history-on-exit t
       eshell-cmpl-dir-ignore "\\`\\(\\.\\.?\\|CVS\\|\\.svn\\|\\.git\\)/\\'")
 
+
+(setq eshell-where-to-jump 'begin)
+(setq eshell-review-quick-commands nil)
+(setq eshell-smart-space-goes-to-end t)
+
 (eval-after-load 'esh-opt
   '(progn
      (require 'em-prompt)
      (require 'em-term)
      (require 'em-cmpl)
+     (require 'em-smart)
+     (eshell-smart-initialize)
      (set-exec-path-from-shell-PATH)
      (setenv "PAGER" "cat")
      (set-face-attribute 'eshell-prompt nil :foreground "turquoise1")
