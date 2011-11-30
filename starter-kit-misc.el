@@ -138,7 +138,7 @@
       magit-diff-options "-w")
 
 ;; Cosmetics
-(set-face-background 'highlight "BlanchedAlmond")  ;; Emacs 22 Only
+;; (set-face-background 'highlight "BlanchedAlmond")  ;; Emacs 22 Only
 (set-face-background 'vertical-border "white")
 (set-face-foreground 'vertical-border "white")
 

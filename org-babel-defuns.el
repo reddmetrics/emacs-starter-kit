@@ -11,13 +11,8 @@
 (setq org-confirm-babel-evaluate nil)
 (setq org-src-fontify-natively t)
 
-(defvar org-babel-default-header-args:clojure 
-  '((:results . "silent") (:tangle . "yes")))
-
-(defun org-babel-execute:clojure (body params)
-  "Evaluate a block of Clojure code with Babel."
-  (slime-repl-eval-string body)
-  "Done!")
+(setq org-babel-default-header-args:clojure
+      '((:results . "silent") (:tangle . "yes")))
 
 (setq org-publish-project-alist
       '(

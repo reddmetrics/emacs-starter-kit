@@ -31,7 +31,6 @@
                     (or (buffer-file-name) load-file-name)))
 
 ;; Load up ELPA, the package manager
-
 (add-to-list 'load-path dotfiles-dir)
 (add-to-list 'load-path (concat dotfiles-dir "midje-mode"))
 (add-to-list 'load-path (concat dotfiles-dir "elpa-to-submit"))
@@ -123,8 +122,12 @@
 ;; Org mode.
 (load "orgmode.el")
 (require 'org-babel-defuns)
-
+(require 'ob-clojure)
 (require 'buffer-move)
+
+;; Theme
+;; (color-theme-zenburn)
+(zenburn)
 
 ;; Haskell mode stuff.
 (require 'hs-lint)
